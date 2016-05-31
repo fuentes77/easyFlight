@@ -1,0 +1,61 @@
+<web-app>
+	<servlet>
+        <servlet-name>RegistrierungsServlet</servlet-name>
+        <servlet-class>ise.servlets.RegistrierungsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistrierungsServlet</servlet-name>
+        <url-pattern>/register_benutzer</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>ise.servlets.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/einloggen</url-pattern>
+    </servlet-mapping>
+
+	 <servlet>
+        <servlet-name>FlugeintragenServlet</servlet-name>
+        <servlet-class>ise.servlets.FlugeintragenServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FlugeintragenServlet</servlet-name>
+        <url-pattern>/flugcreate</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>FlugbuchenServlet</servlet-name>
+        <servlet-class>ise.servlets.FlugbuchenServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FlugbuchenServlet</servlet-name>
+        <url-pattern>/flugbuchen</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>FlugsuchenServlet</servlet-name>
+        <servlet-class>ise.servlets.FlugsuchenServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FlugsuchenServlet</servlet-name>
+        <url-pattern>/flugsuchen</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>NachrichtServlet</servlet-name>
+        <servlet-class>ise.servlets.NachrichtServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NachrichtServlet</servlet-name>
+        <url-pattern>/nachricht</url-pattern>
+    </servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>header.jsp</welcome-file>
+		<welcome-file>footer.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
